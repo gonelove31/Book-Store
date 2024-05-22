@@ -1,0 +1,15 @@
+{
+  "name": "ddung203",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "fix": "prettier --write login.html",
+    "check": "npx prettier --check index.html"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0",
+    "prettier-plugin-tailwindcss": "^0.4.1",
+    "tailwindcss": "^3.3.3"
+  }
+}

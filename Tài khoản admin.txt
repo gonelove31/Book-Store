@@ -1,0 +1,3 @@
+Tài khoản admin: 
+email: admin@admin.com
+mk: admin

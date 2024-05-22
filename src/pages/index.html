@@ -1,0 +1,277 @@
+<!-- <?php
+include "../database/database.php";
+?> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nhóm 14</title>
+  <link href="./dist/output.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../../assets/css/tippyCustom.css" />
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+
+<body>
+  <div>
+    <!-- header -->
+    <div class="container mx-auto flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/IOS_14_Logo.png" alt="Logo" class="h-8 w-auto">
+          <span class="ml-2 font-semibold text-lg">Nhóm Diệp</span>
+      </div>
+ 
+      <!-- Search Input -->
+      <form action="../pages/index.php" method="get" class="flex items-center border rounded-lg px-4 py-2 w-[600px] justify-between">
+          <input name="q" value="" type="text" placeholder="Search" class="bg-transparent focus:outline-none text-white placeholder-gray-300 w-[95%] border-r-[1px]  border-r-[#fff] pr-[10px]">
+          <button type="submit" class="ml-2 text-gray-300 hover:text-white">
+              <svg class="text-[white] w-[20px] h-[20px]  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+              </svg>
+          </button>
+      </form>
+      <div class="myTemplate1 bg-[#374151] rounded-lg">
+          <a href="#" class="block px-4 py-2 text-white hover:opacity-70 font-medium text-[16px]">Xem thông tin tài khoản</a>
+ 
+          <a href="../pages/logout.php" class="block px-4 py-2 text-white hover:opacity-70 font-medium text-[16px]">Đăng xuất</a>
+ 
+      </div>
+ 
+ 
+      <!-- Cart and Account Buttons -->
+      <div class="flex items-center space-x-4 gap-3">
+          <button class="text-gray-300 hover:text-white flex items-center gap-2 account">
+              <svg class="w-[20px] h-[20px] text-[white] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0 0a8.949 8.949 0 0 0 4.951-1.488A3.987 3.987 0 0 0 11 14H9a3.987 3.987 0 0 0-3.951 3.512A8.948 8.948 0 0 0 10 19Zm3-11a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+              </svg>
+              <span class="text-[16px] text-[#fff] font-medium">Tài khoản</span>
+ 
+          </button>
+          <button class="text-gray-300 hover:text-white">
+              <div class="relative">
+ 
+                  <div class="text-white bg-red-500 h-[16px] right-[-10px] top-[-14px] rounded-2xl flex justify-center items-center font-bold text-xs leading-[150%] absolute py-[0.5px] px-[4px]">5</div>
+                  <a href="../../src/pages/main.php">
+                      <svg class="w-[20px] h-[20px] text-[white] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1" />
+                      </svg>
+                  </a>
+ 
+              </div>
+ 
+          </button>
+      </div>
+  </div>
+<!-- het header -->
+  </div>
+  <div class="bg-[#efefef] py-4">
+    <div class="w-[1270px] m-auto">
+      <div class="grid grid-cols-5 gap-3">
+        <!-- ben trai -->
+        <div class="bg-white">
+          <!-- Danh mục sản phẩm -->
+          <div class="border-b-[1px] border-b-[#ebebf0] border-b-solid px-4 py-3">
+<h4 class="text-[14px] font-medium pb-3">Danh Mục Sản Phẩm</h4>
+  <a href="#" class="text-[12px] font-normal flex text-[#38383d] pb-3"> Trang Chủ </a>
+   
+<!-- danh muc san pham -->
+<a href="#">
+hien thi cac danh muc duoi the a
+</a>
+  </div>;
+          <!-- kết thúc danh mục sản phẩm -->
+          <!-- Bắt đầu đánh giá -->
+         
+
+
+
+
+<div class="border-b-[1px] border-b-[#ebebf0] border-b-solid px-4 py-3">
+  <h4 class="text-[14px] font-medium pb-3">Đánh giá</h4>
+  <!-- 5 sao -->
+  <a href= "index.php?star=5"  class= "flex gap-[2px] items-center my-[5px] ">
+      <span class= "flex items-center ">
+          <svg class= "w-3 h-3 text-[#fdd835]  " aria-hidden= "true " xmlns= "http://www.w3.org/2000/svg " fill= "currentColor " viewBox= "0 0 22 20 ">
+              <path d= "M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z " />
+          </svg>
+      </span>
+      <span>
+          <svg class= "w-3 h-3 text-[#fdd835]  " aria-hidden= "true " xmlns= "http://www.w3.org/2000/svg " fill= "currentColor " viewBox= "0 0 22 20 ">
+              <path d= "M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z " />
+          </svg>
+      </span>
+      <span>
+          <svg class= "w-3 h-3 text-[#fdd835]  " aria-hidden= "true " xmlns= "http://www.w3.org/2000/svg " fill= "currentColor " viewBox= "0 0 22 20 ">
+              <path d= "M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z " />
+          </svg>
+      </span>
+      <span>
+          <svg class= "w-3 h-3 text-[#fdd835]  " aria-hidden= "true " xmlns= "http://www.w3.org/2000/svg " fill= "currentColor " viewBox= "0 0 22 20 ">
+              <path d= "M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z " />
+          </svg>
+      </span>
+      <span>
+          <svg class= "w-3 h-3 text-[#fdd835]  " aria-hidden= "true " xmlns= "http://www.w3.org/2000/svg " fill= "currentColor " viewBox= "0 0 22 20 ">
+              <path d= "M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z " />
+          </svg>
+      </span>
+      <span class= "text-[13px] font-normal ml-1 ">từ 5 sao</span>
+  </a>
+
+  <!-- 4 sao -->
+  <a href= "index.php?star=4"  class= "flex gap-[2px] items-center my-[5px] ">
+      <span class= "flex items-center ">
+          <svg class= "w-3 h-3 text-[#fdd835]  " aria-hidden= "true " xmlns= "http://www.w3.org/2000/svg " fill= "currentColor " viewBox= "0 0 22 20 ">
+              <path d= "M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z " />
+          </svg>
+      </span>
+      <span>
+          <svg class= "w-3 h-3 text-[#fdd835]  " aria-hidden= "true " xmlns= "http://www.w3.org/2000/svg " fill= "currentColor " viewBox= "0 0 22 20 ">
+              <path d= "M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z " />
+          </svg>
+      </span>
+      <span>
+          <svg class= "w-3 h-3 text-[#fdd835]  " aria-hidden= "true " xmlns= "http://www.w3.org/2000/svg " fill= "currentColor " viewBox= "0 0 22 20 ">
+              <path d= "M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z " />
+          </svg>
+      </span>
+      <span>
+          <svg class= "w-3 h-3 text-[#fdd835]  " aria-hidden= "true " xmlns= "http://www.w3.org/2000/svg " fill= "currentColor " viewBox= "0 0 22 20 ">
+              <path d= "M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z " />
+          </svg>
+      </span>
+      <span>
+          <svg class= "w-3 h-3 text-[#ccc]  " aria-hidden= "true " xmlns= "http://www.w3.org/2000/svg " fill= "currentColor " viewBox= "0 0 22 20 ">
+              <path d= "M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z " />
+          </svg>
+      </span>
+      <span class= "text-[13px] font-normal ml-1 ">từ 4 sao</span>
+  </a>
+
+  <!-- 3 sao -->
+  <a href= "index.php?star=3"  class= "flex gap-[2px] items-center my-[5px] ">
+      <span class= "flex items-center ">
+          <svg class= "w-3 h-3 text-[#fdd835]  " aria-hidden= "true " xmlns= "http://www.w3.org/2000/svg " fill= "currentColor " viewBox= "0 0 22 20 ">
+              <path d= "M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z " />
+          </svg>
+      </span>
+      <span>
+          <svg class= "w-3 h-3 text-[#fdd835]  " aria-hidden= "true " xmlns= "http://www.w3.org/2000/svg " fill= "currentColor " viewBox= "0 0 22 20 ">
+              <path d= "M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z " />
+          </svg>
+      </span>
+      <span>
+          <svg class= "w-3 h-3 text-[#fdd835]  " aria-hidden= "true " xmlns= "http://www.w3.org/2000/svg " fill= "currentColor " viewBox= "0 0 22 20 ">
+              <path d= "M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z " />
+          </svg>
+      </span>
+      <span>
+          <svg class= "w-3 h-3 text-[#ccc]  " aria-hidden= "true " xmlns= "http://www.w3.org/2000/svg " fill= "currentColor " viewBox= "0 0 22 20 ">
+              <path d= "M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z " />
+          </svg>
+      </span>
+      <span>
+          <svg class= "w-3 h-3 text-[#ccc]  " aria-hidden= "true " xmlns= "http://www.w3.org/2000/svg " fill= "currentColor " viewBox= "0 0 22 20 ">
+              <path d= "M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z " />
+          </svg>
+      </span>
+      <span class= "text-[13px] font-normal ml-1 ">từ 3 sao</span>
+  </a>
+</div>
+
+          <!-- kết thúc đánh giá -->
+
+          <!-- Bắt đầu  giá -->
+          <!-- <?php
+          include_once "./../includes/cuong/Filter/Price.php"
+          ?> -->
+
+          <!-- kết thúc  giá -->
+
+          <!-- Bắt đầu shop  -->
+          <div class="border-b-[1px] border-b-[#ebebf0] border-b-solid px-4 py-3">
+            <h4 class="text-[14px] font-medium pb-3">Nhà phát hành</h4>
+             
+            
+            <a href="#">
+            viet cac nhà phát hành
+            </a>
+              </div>
+          <!-- kết thúc  shop  -->
+
+        </div>
+
+        <!--  bên phải -->
+        <div class="col-span-4">
+          <div class="bg-white">
+            <div class="px-4 py-3 inline  text-gray-700 text-[20px] font-bold">
+              Nhà Sách Tiki
+            </div>
+
+
+          </div>
+
+          <!-- Bắt đầu product -->
+          <!-- 1 item -->
+          <div class="grid grid-cols-4 mt-2 gap-2">
+            <a href="./detailProduct.php?ProductID=" class=  "bg-white ">
+                              <!-- img -->
+                              <div class=  "relative  ">
+                                <img src=  "https://salt.tikicdn.com/ts/upload/f0/68/87/8b851bd4e439a34de96a6152cffcd1b3.png  " alt=  "  " class=  "absolute w-[72px] h-[20px]  " />
+                                <img src=  "../../Uploads/0675631bc561ba2ffe709475cfab8728.jpg.webp" alt=  "  " class=  "h-full w-full py-2 px-3   " />
+                              </div>
+                
+                              <!-- content -->
+                              <div class=  "px-3 py-2 border-b border-gray-300  ">
+                                <!-- ten sach -->
+                                <h3 class=  "font-normal text-xs leading-4 text-gray-700 m-0 break-words  "> Kế toán vỉa hè
+                                </h3>
+                
+                                <!-- star  + sold out -->
+                                <div class=  "flex mb-[6px] items-center  ">
+                                  <div class=  "flex items-center gap-1  ">
+                                    <span class=  "text-[12px] text-[#808089]  "> 5 </span>
+                                    <svg class=  "w-3 h-3 text-[#fdd835]   " aria-hidden=  "true  " xmlns=  "http://www.w3.org/2000/svg  " fill=  "currentColor  " viewBox=  "0 0 22 20  ">
+                                      <path d=  "M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z  " />
+                                    </svg>
+                                  </div>
+                                  <div class=  "w-[1px] h-[14px] bg-gray-100 ml-[2px] mr-[4px]  "></div>
+                                  <div class=  "flex items-center  ">
+                                    <span class=  "text-[12px] text-[#808089]  ">Đã bán 32</span>
+                                  </div>
+                                </div>
+                
+                                <!-- price + discount -->
+                                <div class=  "flex items-center  ">
+                                  <span class=  "text-[black] font-medium text-[16px]  "> 179 <sub class=  "top-[-5px]  "> ₫</sub></span>
+                                  <div class=  "ml-1 mt-[3px] text-[12px] text-[#ff424e] font-medium  ">
+                                    -
+                                    <span class=  "  ">25% </span>
+                                  </div>
+                                </div>
+                              </div>
+                
+                              <!-- footer -->
+                              <div class=  "flex gap-1 px-3 py-2  ">
+                                <img src=  "https://salt.tikicdn.com/ts/upload/bf/5b/b9/f54345d674f86ab1bc3f8a68e91ee049.png  " alt=  "  " class=  "w-[32px] h-[16px]  " />
+                                <span class=  "font-normal text-xs leading-4 text-[#808089]  ">Giao siêu tốc 2h</span>
+                              </div>
+                            </a>
+                           
+          
+          </div>
+          
+
+
+          <!-- pagination -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
